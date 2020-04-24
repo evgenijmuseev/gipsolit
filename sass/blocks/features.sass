@@ -1,0 +1,43 @@
+.features
+    padding-top: 99px
+    padding-bottom: 140px
+    &__title
+        margin-bottom: 130px
+    &-block
+        text-align: center
+        display: flex
+        justify-content: space-between
+    &-item
+        flex-basis: 23%
+        &__img
+            margin-bottom: 47px
+            min-height: 69px
+        &__title
+            color: $title-color
+            font-size: 1.25rem
+            font-weight: 700
+            margin-bottom: 35px
+        &__text
+            color: $title-color
+            font-size: 1rem
+            font-weight: 300
+            line-height: 1.25rem
+            &:last-child
+                a
+                    color: #509d50
+@media (max-width: 992px)
+    .features
+        &-block
+            flex-wrap: wrap
+        &-item
+            flex-basis: 45%
+            margin-bottom: 30px
+@media (max-width: 768px)
+    .features
+        &__title
+            margin-bottom: 60px
+        &-block
+            flex-wrap: wrap
+            justify-content: center
+        &-item
+            flex-basis: 80%

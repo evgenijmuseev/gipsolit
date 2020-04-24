@@ -1,0 +1,47 @@
+.work
+    background: url("../img/work/work-bg.jpg") center center no-repeat
+    background-size: cover
+    padding-top: 120px
+    padding-bottom: 117px
+    &__title
+        margin-bottom: 45px
+    &__subtitle
+        margin-bottom: 65px
+    &-block
+        display: flex
+        flex-wrap: wrap
+    &-item
+        flex-basis: 33%
+        margin-bottom: 63px
+        &:nth-child(4)
+            margin-bottom: 0
+        &:nth-child(5)
+            margin-bottom: 0
+        &__img
+            margin-bottom: 33px
+            min-height: 105px
+        &__title
+            font-size: 1.375rem
+            font-weight: 700
+            line-height: 1.125rem
+            margin-bottom: 27px
+        &__descr
+            font-size: 1rem
+            font-weight: 400
+            line-height: 1.125rem
+@media (max-width: 992px)
+    .work
+        &-item
+            flex-basis: 45%
+@media (max-width: 576px)
+    .work
+        &-block
+            text-align: center
+            justify-content: center
+        &-item
+            flex-basis: 90%
+            margin-bottom: 40px
+            &:nth-child(4)
+                margin-bottom: 40px
+            &:nth-child(5)
+                margin-bottom: 40px
