@@ -1,0 +1,33 @@
+.service
+    padding-top: 120px
+    padding-bottom: 112px
+    background-color: $bg-color
+    &-block
+        display: flex
+        justify-content: center
+        text-align: center
+    &__title
+        margin-bottom: 49px
+        color: $light-color
+    &__subtitle
+        margin-bottom: 70px
+        color: $light-color
+    &-item
+        margin-right: 110px
+        &:last-child
+            margin-right: 0
+        &__title
+            color: $light-color
+            margin-bottom: 34px
+        &__img
+            margin-bottom: 25px
+    &__button
+        padding: 20px 50px
+@media (max-width: 992px)
+    .service
+        &-block
+            flex-wrap: wrap
+        &-item
+            margin-right: 0
+            flex-basis: 60%
+            margin-bottom: 30px

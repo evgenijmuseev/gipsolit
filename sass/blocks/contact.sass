@@ -1,0 +1,63 @@
+.contact
+    padding-top: 80px
+    padding-bottom: 82px
+    background: url("../img/contact/contact-bg.jpg") right -250px bottom no-repeat
+    background-size: cover
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-address
+        &__title
+            margin-bottom: 69px
+            font-size: 2.25rem
+            font-weight: 700
+            line-height: 3.625rem
+        span
+            display: block
+            margin-bottom: 5px
+            font-size: 1.125rem
+            font-weight: 400
+        .map
+            margin-top: 25px
+            margin-bottom: 36px
+    .contacts
+        text-align: center
+        &-form
+            padding: 47px 55px 45px 55px
+            background-color: $light-color
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__title
+                font-size: 1.125rem
+                font-weight: 400
+                margin-bottom: 35px
+            label
+                padding: 0 10px
+                margin-bottom: -8px
+                z-index: 2
+                background-color: #fff
+                font-size: 0.813rem
+                font-weight: 400
+            input
+                height: 54px
+                margin-bottom: 10px
+                border: 1px solid #e5e5e5
+                border-radius: 3px
+                width: 100%
+        &__button
+            margin-top: 10px
+            width: 100%
+@media (max-width: 992px)
+    .contact
+        &-block
+            flex-wrap: wrap
+            justify-content: center
+        &-address
+            flex-basis: 50%
+@media (max-width: 768px)
+    .contact
+        &-address
+            .map
+                display: none

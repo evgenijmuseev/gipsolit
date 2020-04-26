@@ -1,0 +1,58 @@
+.include
+    padding-top: 120px
+    padding-bottom: 132px
+    background-color: $grey-color
+    &__title
+        color: $bg-color
+        margin-bottom: 49px
+        font-size: 3rem
+        font-weight: 700
+    &__subtitle
+        margin-bottom: 107px
+    &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &-item
+        flex-basis: 20%
+        display: flex
+        align-items: center
+        margin-bottom: 115px
+        &__num
+            width: 50px
+            height: 50px
+            margin-right: 19px
+            color: $light-color
+            border: 2px solid $bg-color
+            background-color: transparent
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            span
+                background-color: $bg-color
+                width: 40px
+                height: 40px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+    &-text
+        width: 230px
+        &__title
+            font-size: 1rem
+            font-weight: 700
+            line-height: 1.125rem
+        &__descr
+            font-size: 0.813rem
+            font-weight: 300
+            line-height: 1.125rem
+            
+@media (max-width: 576px)
+    .include
+        &-block
+            justify-content: center
+        &-text
+            width: 200px
+        &-item
+            margin-bottom: 50px

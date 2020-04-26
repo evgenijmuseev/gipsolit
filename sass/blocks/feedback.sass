@@ -1,0 +1,53 @@
+.feedback
+    padding-top: 120px
+    padding-bottom: 151px
+    &__title
+        margin-bottom: 100px
+    &-slider
+        width: 80%
+        margin: 0 auto
+        position: relative
+        &__item
+            padding: 56px 60px 59px 60px
+            border: 1px solid #e5e5e5
+    &-block
+        display: flex
+        justify-content: center
+        align-items: center
+    &-text
+        flex-basis: 45%
+        padding-left: 41px
+        p
+            font-size: 1rem
+            line-height: 3rem
+            span
+                font-weight: 700
+        .fotorama
+            flex-basis: 45%
+
+@media (max-width: 768px)
+    .feedback
+        &-block
+            flex-direction: column
+        &-slider
+            width: 80%
+            margin: 0 auto
+
+.prev-feedback-btn
+    background: #49bf15 url("../img/feedback/prev.png") center center no-repeat
+    height: 60px
+    color: $light-color
+    width: 40px
+    border: none
+    position: absolute
+    top: 42%
+    left: -40px
+.next-feedback-btn
+    background: #49bf15 url("../img/feedback/next.png") center center no-repeat
+    height: 60px
+    color: $light-color
+    width: 40px
+    border: none
+    position: absolute
+    top: 42%
+    right: -40px

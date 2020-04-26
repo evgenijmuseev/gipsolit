@@ -1,0 +1,97 @@
+.answer
+    padding-top: 120px
+    padding-bottom: 130px
+    position: relative
+    &::after
+        content: ""
+        background: url("../img/answer/woman.png") bottom center no-repeat
+        z-index: 10
+        display: block
+        width: 314px
+        height: 526px
+        position: absolute
+        bottom: 0
+        left: 50%
+        margin-left: -167px
+    &__title
+        margin-bottom: 86px
+    &-block
+        display: flex
+        justify-content: space-between
+        .problem
+            &-block
+                flex-basis: 43%
+                padding: 50px
+                padding-bottom: 43px
+                border: 4px solid #e8e8e8
+                &__title
+                    margin-bottom: 51px
+                    font-size: 1.313rem
+                    font-weight: 700
+                    color: #a3a3a3
+            &-list
+                color: $black-color
+                &__item
+                    margin-bottom: 55px
+                    &:last-child
+                        margin-bottom: 0
+                    &::before
+                        content: ""
+                        width: 18px
+                        height: 18px
+                        background: url("../img/answer/cancel.png") center center no-repeat
+                        display: inline-block
+                        line-height: 22px
+                        vertical-align: middle
+                        margin-right: 27px
+        .desision
+            &-block
+                flex-basis: 43%
+                padding: 50px
+                border: 4px solid $bg-color
+                &__title
+                    color: black
+                    margin-bottom: 51px
+                    font-size: 1.313rem
+                    font-weight: 700
+            &-list
+                color: $black-color
+                &__item
+                    margin-bottom: 55px
+                    display: flex
+                    &:last-child
+                        margin-bottom: 0
+                    &::before
+                        content: ""
+                        width: 18px
+                        height: 15px
+                        flex-basis: 33px
+                        background: url("../img/answer/checked.png") center center no-repeat
+                        display: flex
+                        line-height: 22px
+                        vertical-align: middle
+                        margin-right: 27px
+                        
+@media (max-width: 992px)
+    .answer
+        &::after
+            background: none
+        &-block
+            flex-wrap: wrap
+            justify-content: center
+            .problem-block
+                flex-basis: 80%
+                margin-bottom: 30px
+            .desision-block
+                flex-basis: 80%
+@media (max-width: 576px)
+    .answer
+        &::after
+            background: none
+        &-block
+            flex-wrap: wrap
+            justify-content: center
+            .problem-block
+                padding: 30px
+            .desision-block
+                padding: 30pxs
